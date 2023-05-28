@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends python3-dev gcc
 ENV CHANNEL_ACCESS_TOKEN ""
 ENV CHANNEL_SECRET ""
 ENV CHANNEL_USERID ""
-ENV CALLBACK_DOMAIN ""
 ENV STARTURL ""
+ENV CALLBACK_DOMAIN ""
 
 ENTRYPOINT ["/usr/local/bin/python3", "main.py"]
