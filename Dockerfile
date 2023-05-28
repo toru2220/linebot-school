@@ -1,7 +1,7 @@
 FROM python:3.12.0b1-slim-buster
 
 ADD requirements.txt .
-RUN apt-get update && apt-get install -y --no-install-recommends build-essential && pip3 install -r requirements.txt
+RUN apt-get update && apt-get install -y --no-install-recommends gcc build-essential && pip3 install -r requirements.txt
 
 ENV CHANNEL_ACCESS_TOKEN ""
 ENV CHANNEL_SECRET ""
